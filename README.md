@@ -1,3 +1,3 @@
 # web-dev-project
-EDU web     _ _                                                                                                                        
+EDU web                                                                                                                           
 An Educational Website 
