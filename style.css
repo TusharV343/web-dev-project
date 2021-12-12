@@ -1,286 +1,482 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/8b95a3605c.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>webweb</title>
-</head>
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Tamma 2', cursive;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
-<body style="width: 100vw; overflow-x: hidden;">
-    <nav class="navbar navbar-expand-lg navbar-dark"
-        style="position:sticky; top: 0; background-color: rgba(22, 34, 57, 0.95) !important; padding: 12px; z-index: 1000000;">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#home" style="font-size: 2.1rem;"><span>E D U 
-                </span>web</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">ABOUT US</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#course">COURSES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contact">CONTACT</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+::selection{
+    background-color: #25f5d8;
+}
 
-    <section id="home">
-        <div class="img">
-            <img
-                src="https://images.unsplash.com/photo-1528459105426-b9548367069b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTEyfHxiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-        </div>
-        <div class="content">
-            <h1 class="content-h1 display-2"><span>WELCOME</span></h1>
-            <button type="submit" class="content submit-button"><a href="#features">DISCOVER MORE</a></button>
-        </div>
-    </section>
+span, .nav-link a:hover {
+    color: #25f5d8#25f5d8#25f5d8#25f5d8#25f5d8#25f5d8 !important;
+}
 
-    <section id="features">
-        <div class="my-container">
-            <div class="my-card">
-                <div class="my-box">
-                    <div class="my-content">
-                        <h2 style="font-size: 1.6rem;"><i class="fas fa-pencil-alt"></i> All Courses</h2>
-                        <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere
-                            imperdiet. Donec maximus
-                            elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
-                        <a href="#course">More info</a>
-                    </div>
-                </div>
-            </div>
-            <div class="my-card">
-                <div class="my-box">
-                    <div class="my-content">
-                        <h2 style="font-size: 1.6rem;"><i class="fas fa-graduation-cap"></i> Virtual Class</h2>
-                        <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere
-                            imperdiet. Donec maximus
-                            elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
-                        <a href="#about">Details</a>
-                    </div>
-                </div>
-            </div>
-            <div class="my-card">
-                <div class="my-box">
-                    <div class="my-content">
-                        <h2 style="font-size: 1.6rem;"><i class="fas fa-pencil-alt"></i> Real Meeting</h2>
-                        <p>Curabitur id eros vehicula, tincidunt libero eu, lobortis mi. In mollis eros a posuere
-                            imperdiet. Donec maximus
-                            elementum ex. Cras convallis ex rhoncus, laoreet libero eu, vehicula libero.</p>
-                        <a href="#course">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+#home {
+    height: 90vh;
+    background-color: #976512f2;
+}
 
-    <section id="about">
-        <h2 class="display-2 text-white text-center py-12"><span>ABOUT</span> US</h2>
-        <section class="text-gray-600 body-font">
-            <div class="container px-5 py-24 mx-auto">
-                <div class="flex flex-wrap -m-4">
-                    <div class="p-4 lg:w-1/3">
-                        <div
-                            class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">BEST EDUCATION
-                            </h1>
-                            <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Similique qui maxime quia corporis facilis tenetur. Ab alias vitae delectus culpa!</p>
-                            <img
-                                src="https://cdn.pixabay.com/photo/2015/11/19/21/10/glasses-1052010__340.jpg">
-                            <div
-                                class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 lg:w-1/3">
-                        <div
-                            class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">TOP MANAGEMENT
-                            </h1>
-                            <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Voluptates ut suscipit porro praesentium autem! Sunt facilis reiciendis sit dolor
-                                possimus, ab molestiae excepturi et cum?</p>
-                            <img
-                                src="https://cdn.pixabay.com/photo/2017/11/30/09/03/business-2987962_960_720.jpg">
-                            <div
-                                class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-4 lg:w-1/3">
-                        <div
-                            class="h-full bg-gray-100 bg-opacity-75 px-8 pt-16 pb-24 rounded-lg overflow-hidden text-center relative">
-                            <h1 class="title-font sm:text-2xl text-xl font-medium text-gray-900 mb-3">QUALITY MEETING
-                            </h1>
-                            <p class="leading-relaxed mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Doloribus asperiores laboriosam at, architecto voluptatem optio animi culpa voluptatibus
-                                natus ducimus.</p>
-                            <img
-                                src="https://cdn.pixabay.com/photo/2017/05/04/16/37/meeting-2284501__340.jpg">
-                            <div
-                                class="text-center mt-2 leading-none flex justify-center absolute bottom-0 left-0 w-full py-4">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section>
-    <section id="course">
-        <h2 class="text-white text-center display-2 py-2" style="padding-top: 31px !important;"><span>Our Courses</span></h2>
-        <div class="post-container owl-carousel">
+.content{
+    position: relative;
+    top: -448px;
+    left: 35%;
+    color: white;
 
-            <div class="post">
-                <div class="image">
-                    <img
-                        src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG9ncmFwaHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="course-content">
-                    <a href="#" class="title">Photography</a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aliquid nesciunt ea cumque nam
-                        ratione
-                        dignissimos assumenda repellendus possimus. Eligendi iure odit voluptatibus nisi ex? Enim alias
-                        possimus
-                        delectus molestiae.</p>
-                    <a href="#" class="course-link">Read More</a>
-                </div>
-            </div>
-            <div class="post">
-                <div class="image">
-                    <img
-                        src="https://images.unsplash.com/photo-1620912189868-30778f884588?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JhcGhpY3MlMjBkZXNpZ25pbmd8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="course-content">
-                    <a href="#" class="title">Graphics Designing</a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aliquid nesciunt ea cumque nam
-                        ratione
-                        dignissimos assumenda repellendus possimus. Eligendi iure odit voluptatibus nisi ex? Enim alias
-                        possimus
-                        delectus molestiae.</p>
-                    <a href="#" class="course-link">Read More</a>
-                </div>
-            </div>
-            <div class="post">
-                <div class="image">
-                    <img
-                        src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YnVzaW5lc3MlMjBldGhpY3N8ZW58MHwwfDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="course-content">
-                    <a href="#" class="title">Business Ethics</a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aliquid nesciunt ea cumque nam
-                        ratione
-                        dignissimos assumenda repellendus possimus. Eligendi iure odit voluptatibus nisi ex? Enim alias
-                        possimus
-                        delectus molestiae.</p>
-                    <a href="#" class="course-link">Read More</a>
-                </div>
-            </div>
-            <div class="post">
-                <div class="image">
-                    <img
-                        src="https://images.unsplash.com/photo-1628565239608-47549a1126e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1lZGlhJTIwc3RyZWFtaW5nfGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="course-content">
-                    <a href="#" class="title">Media Streaming</a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aliquid nesciunt ea cumque nam
-                        ratione
-                        dignissimos assumenda repellendus possimus. Eligendi iure odit voluptatibus nisi ex? Enim alias
-                        possimus
-                        delectus molestiae.</p>
-                    <a href="#" class="course-link">Read More</a>
-                </div>
-            </div>
-            <div class="post">
-                <div class="image">
-                    <img
-                        src="https://images.unsplash.com/photo-1557838923-2985c318be48?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8ZGlnaXRhbCUyMG1hcmtldGluZ3xlbnwwfDB8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
-                </div>
-                <div class="course-content">
-                    <a href="#" class="title">Digital Marketing</a>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aliquid nesciunt ea cumque nam
-                        ratione
-                        dignissimos assumenda repellendus possimus. Eligendi iure odit voluptatibus nisi ex? Enim alias
-                        possimus
-                        delectus molestiae.</p>
-                    <a href="#" class="course-link">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
+}
 
-    <section id="contact">
-        <div class="contact-wrap">
-            <div class="contact-in">
-                <h1>Contact Info</h1>
-                <h2><i class="fa fa-phone"></i> Phone</h2>
-                <p>123-456-789</p>
-                <h2><i class="fa fa-envelope"></i> Email</h2>
-                <p>info@democompany.com</p>
-                <h2><i class="fa fa-map-marker"></i> Address</h2>
-                <p>Vasant Vihar, Delhi, India</p>
-                <ul>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul>
-            </div>
-            <div class="contact-in">
-                <h1><span>Send a Message</span></h1>
-                <form>
-                    <input type="text" placeholder="Full Name" class="contact-in-input">
-                    <input type="text" placeholder="Email" class="contact-in-input">
-                    <input type="text" placeholder="Subject" class="contact-in-input">
-                    <textarea placeholder="Message" class="contact-in-textarea"></textarea>
-                    <input type="submit" value="SUBMIT" class="contact-in-btn">
-                </form>
-            </div>
-            <div class="contact-in">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192776!2d77.06889754725782!3d28.52758200617607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1601968196548!5m2!1sen!2sin"
-                    width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-                    tabindex="0"></iframe>
-            </div>
-        </div>
+.content h3{
+    font-size: 1.2rem;
+    margin-bottom: 23px;
+}
 
-    </section>
+.content h1{
+    position: relative;
+    left: -3%;
+    font-size: 3.1rem;
+}
 
-    <footer id="footer">
-        <h4 class="text-center bg-dark"
-            style="color: white; padding: 23px; flex-wrap: wrap; font-weight: 800; font-size: 1.3rem;">&copy; COPYRIGHT
-            2021 BY <span>E D U  </span>web</div>
-    </footer>
+.img {
+    background-size: cover;
+    background-color: #976512f2;
+    background-size: cover;
+    opacity: 0.1;
+    background-attachment: scroll;
+    z-index: 1;
+}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-        crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-</body>
+.img img{
+    min-width: 100%;
+    min-height: 100%;
+    max-height: 90vh;
+    object-fit: cover;
+}
 
-</html>
+#home .content{
+    position: relative;
+    top: -68%;
+    left: 47%;
+    color: white;
+    letter-spacing: .05rem;
+}
+
+#home .content-h1{
+    position: relative;
+    top: 22px;
+    left: -2em;
+    font-size: 5.4rem;
+    margin-bottom: 21px;
+}
+
+.submit-button{
+    border: 2px solid #25f5d8;
+    background-color: #25f5d8;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    font-weight: 600;
+}
+
+#home .submit-button{
+    position: relative;
+    left: -46px;
+}
+
+#home .submit-button a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#home .my-content button a{
+    text-decoration: none; 
+    color:white;
+    font-weight: bold;
+}
+
+#features{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    background: #232427;
+}
+#features .my-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px 0;
+}
+#features .my-container .my-card{
+    position: relative;
+    min-width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+                inset -5px -5px 15px rgba(255,255,255,0.1),
+                5px 5px 15px rgba(0,0,0,0.3),
+                -5px -5px 15px rgba(255,255,255,0.1);
+    border-radius: 15px;   
+    margin: 30px;
+}
+
+#features .my-container .my-card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+}
+
+#features .my-container .my-card .my-box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border: 2px solid #1e1f23;
+    border-radius: 15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#features .my-container .my-card .my-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.05);
+    pointer-events: none;
+}
+
+#features .my-container .my-card .my-box:hover{
+    transform: translateY(-50px);
+    box-shadow: 0 40px 70px rgba(0,0,0,0.5);
+}
+
+#features .my-container .my-card .my-box .my-content{
+    padding: 20px;
+    text-align: center;
+}
+
+#features a, #features h2{
+    color: white;
+    text-transform: uppercase;
+}
+
+#features a{
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #000;
+    margin-top: 15px;
+    border-radius: 20px;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+#features .my-container .my-card:nth-child(1) .my-box .my-content a{
+    background: #2196f3;
+}
+#features .my-container .my-card:nth-child(2) .my-box .my-content a{
+    background: #e91e63;
+}
+#features .my-container .my-card:nth-child(3) .my-box .my-content a{
+    background: #97dc47;
+}
+
+#features .my-container p{
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+#about {
+    min-height: 100vh;
+    background-color: #976512f2;
+    background: url(https://images.unsplash.com/photo-1583418007992-a8e33a92e7ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    transform-style: preserve-3d;
+}
+.about-container .img-size{
+    width: 23%;
+}
+
+.nav-link:hover{
+    color: #25f5d8 !important;
+}
+
+#course{
+    background: url(https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+    min-height: 100vh;
+    background-color: #976512f2;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#course .post-container{
+    padding-top: 130px;
+}
+
+#course .post-container .post{
+    /* width: fit-content;
+    height: 200px; */
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#course .post-container .post .image img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#course .post-container .post .course-content{
+    padding: 0 20px;   
+}
+
+#course .post-container .post .course-content .title{
+    font-weight: 600;
+    font-size: 22px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+#course .post-container .post:hover .title{
+    text-decoration:underline;
+}
+
+#course .post-container .post .course-content p{
+    font-size: 14px;
+    padding: 5px 0;
+    color: #666;
+}
+
+#course .post-container .post .course-content a{
+    display: block;
+    color: tomato !important;
+    margin-top: 10px;
+}
+
+#course .post-container .post .course-content a:hover{
+    color: #333 !important;
+}
+
+#contact{
+    background-color: #976512f2;
+}
+
+.contact-wrap {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact-in {
+	padding: 40px 30px;
+}
+
+.contact-in:nth-child(1) {
+	flex: 30%;
+	color: #fff;
+}
+
+.contact-in:nth-child(2) {
+	flex: 45%;
+	background: #4c4d50;
+}
+
+.contact-in:nth-child(3) {
+	flex: 25%;
+	padding: 0;
+}
+
+.contact-in h1 {
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.contact-in h2 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.contact-in h2 i {
+	font-size: 16px;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	background: #f5f5f5;
+	color: #000;
+	border-radius: 50px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.contact-in p {
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.contact-in ul {
+	padding: 0;
+	margin: 0;
+}
+
+.contact-in ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.contact-in ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background: #fff;
+	border-radius: 50px;
+}
+
+.contact-in ul li a i {
+	font-size: 14px;
+	line-height: 30px;
+	color: #000;
+}
+
+.contact-in form {
+	width: 100%;
+	height: auto;
+}
+
+.contact-in-input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	padding-left: 5px;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-input::placeholder {
+	color: #fff;
+}
+
+.contact-in-textarea {
+	width: 100%;
+	height: 140px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	padding-top: 5px;
+	padding-left: 5px;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-textarea::placeholder {
+	color: #fff;
+}
+
+.contact-in-btn {
+	width: 100%;
+	height: 40px;
+	border: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+}
+
+.contact-in iframe {
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen and (max-width:480px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+
+}
+
+@media only screen and (max-width:360px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+
+}
